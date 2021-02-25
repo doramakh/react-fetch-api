@@ -119,3 +119,39 @@ li:not(:last-child) {
     opacity: 0.6;
 }
 
+.post-section .container {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.post-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.post-title::before{
+    display: block;
+    width: 120px;
+    height: 200px;
+    margin-right: 45px;
+    background-image: url('./img/post.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: '';
+}
+
+.post-body {
+    font-size: 32px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}

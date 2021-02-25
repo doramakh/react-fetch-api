@@ -23,11 +23,12 @@ function Post () {
   
   return (
     <>
-      <section>
+      <section className="post-section">
         <div className="container">
             <div>{loading && <>loading</>}</div>
-            <h2>{!data ? <>loading</> : data.title} </h2>
-            <p>{!data ? <>loading</> : data.body} </p> 
+            <h2 className="post-title">{!data ? <>loading</> : data.title} </h2>
+            <p className="post-body">{!data ? <>loading</> : data.body} </p> 
+            <img src={'https://picsum.photos/id/' + params.id + '/600/320'} alt="Random" />
             {/* <p>{data.title}</p>   */}
         </div>
       </section>
