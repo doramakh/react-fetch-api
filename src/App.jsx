@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Switch>
-        <Route path="/posts" exact>
+        <Route path="/" exact>
           <Header />
           <Posts />
         </Route>
